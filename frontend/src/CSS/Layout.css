@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+} 
+
+main{
+    width: 100vw;
+    padding: 2rem;
+    flex: 1;
+}
+
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    position: relative;
+    color: white;
+    margin-top: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    transition: margin-right 0.5s ease;
+}
+
+.Logo-text{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.LogIn-signUp-Links{
+    display: flex;
+    gap: 1rem;
+}
+
+.LogIn-signUp-Links a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.LogIn-signUp-Links a:hover{
+    color: #9656ce;
+}
+
+.menu-wrapper{
+    position: relative;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    color: #9656ce;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: calc(100vh - 2rem);
+    width: 150px;
+    padding: 2rem 1rem;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+}
+
+.side-menu a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    user-select: none;
+}
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+.side-menu a:hover {
+    color: #9656ce;
+}
+
+.right-section.menu-open {
+    margin-right: 150px;
+    transition: margin-right 0.5s ease;
+}
+
+footer {
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 500;
+    transition: margin-bottom 0.5s ease;
+}
