@@ -15,6 +15,10 @@ function App() {
     <>
       <Router>
         <Routes>
+          {/* 
+            This is the main route that contains the layout and the nested routes for example Home, LogIn, and SignUp.
+            The Layout component will render the header, footer, and main content area.
+          */}
           <Route path='/' element={<Layout />}>
             <Route path='/' element={<Home />}/>
             <Route path='Login' element={<LogIn />}/>
@@ -28,3 +32,4 @@ function App() {
 }
 
 export default App
+  
