@@ -1,3 +1,8 @@
+/* 
+    Detta är css för det som hör till layout exempelvis: footer, header och lite för main, 
+    Resterande för main kommer delas upp i andra css filer beroende på vilken komponent de hamnar i. 
+*/
+
 *{
     margin: 0;
     padding: 0;
