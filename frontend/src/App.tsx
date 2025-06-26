@@ -7,6 +7,8 @@ import Layout from './Components/Layout/Layout'
 import Home from './Components/MenuOptions/Home'
 import LogIn from './Components/MenuOptions/LogIn'
 import SignUp from './Components/MenuOptions/SignUp'
+import AboutUs from './Components/MenuOptions/AboutUs'
+import Gametracker from './Components/MenuOptions/Gametracker'
 
 
 function App() {
@@ -23,7 +25,8 @@ function App() {
             <Route path='/' element={<Home />}/>
             <Route path='Login' element={<LogIn />}/>
             <Route path='Signup' element={<SignUp />}/>
-
+            <Route path='Gametracker' element={<Gametracker />}/>
+            <Route path='AboutUs' element={<AboutUs />}/>
           </Route>
         </Routes>
       </Router>

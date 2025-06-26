@@ -50,6 +50,9 @@ const Layout = () => {
                   <Link to="/Gametracker" onClick={() => setMenuOpen(false)}>
                     GAMETRACKER
                   </Link>
+                  <Link to="/AboutUs" onClick={() => setMenuOpen(false)}>
+                    ABOUT US
+                  </Link>
                 </div>
               )}
             </div>
@@ -63,7 +66,9 @@ const Layout = () => {
       </main>
       
       {/* Footer längst ner på sidan. */}
-      <footer></footer>
+      <footer>
+        <p>© PixelHaven</p>
+      </footer>
     </div>
   );
 };
