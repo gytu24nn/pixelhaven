@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './CSS/App.css'
+import { ErrorBoundary } from 'react-error-boundary'
 
 {/*Here I Import the components from the components folder.*/}
 import Layout from './Components/Layout/Layout'
@@ -9,6 +10,7 @@ import LogIn from './Components/MenuOptions/LogIn'
 import SignUp from './Components/MenuOptions/SignUp'
 import AboutUs from './Components/MenuOptions/AboutUs'
 import Gametracker from './Components/MenuOptions/Gametracker'
+import ErrorBoundaryFallBack from './Components/ErrorBoundry'
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
   return (
     <>
       <Router>
+        <ErrorBoundary FallbackComponent={ErrorBoundaryFallBack}>
         <Routes>
           {/* 
             This is the main route that contains the layout and the nested routes for example Home, LogIn, and SignUp.
@@ -29,6 +32,7 @@ function App() {
             <Route path='AboutUs' element={<AboutUs />}/>
           </Route>
         </Routes>
+        </ErrorBoundary>
       </Router>
     </>
   )
