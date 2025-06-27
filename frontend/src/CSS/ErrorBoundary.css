@@ -1,0 +1,40 @@
+/* CSS för ErrorBOundary */
+
+.error-boundary-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.errorBoundary-Title{
+
+}
+
+.errorBoundary-Message{
+
+}
+
+.errorBoundary-Btn {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #242424;
+    margin: 10px;
+    text-align: center;
+    padding: 14px 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+}
+
+.errorBoundary-Btn:hover{
+    color: #9656ce;
+}
