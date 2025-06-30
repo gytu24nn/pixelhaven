@@ -20,7 +20,7 @@ const handleLogIn = (e: React.FormEvent) => {
 }
 
     return(
-        <>
+        <div className="LogIn-Wrapper">
             <form onSubmit={handleLogIn} className="LogIn-Form-Container">
                 <h2>Log in:</h2>
 
@@ -44,8 +44,19 @@ const handleLogIn = (e: React.FormEvent) => {
                 />
 
                 <button type="submit">Sign in</button>
+
+                <hr className="Login-Line " />
+
+                <div className="alt-LogIn-Options">
+                    <button type="button" onClick={() => alert("Goolge sign in not implemented yet!")}>
+                        <i className="fa-brands fa-google"></i> Sign in with Google
+                    </button>
+                    <button type="button" onClick={() => alert("Steam sign in not implemented yet!")}>
+                        <i className="fa-brands fa-steam"></i> Sign in with Steam
+                    </button>
+                </div>
             </form>
-        </>
+        </div>
     )
 }
 
