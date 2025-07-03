@@ -22,14 +22,14 @@ const handleLogIn = (e: React.FormEvent) => {
     return(
         <div className="LogIn-Wrapper">
             <form onSubmit={handleLogIn} className="LogIn-Form-Container">
-                <h2>Log in:</h2>
+                <h2>Sign in</h2>
 
                 {errorMessage && <p className="LogIn-Error-Message">{errorMessage}</p>}
                 <label htmlFor="Username-Input-LogIn">Username:</label>
                 <input 
                     className="Username-Input-LogIn"
                     type="text"
-                    placeholder="Enter your username"
+                    placeholder="Enter your username..."
                     value={userNameInput}
                     onChange={(e) => setUserNameInput(e.target.value)}
                 />
@@ -38,7 +38,7 @@ const handleLogIn = (e: React.FormEvent) => {
                 <input
                     className="Password-Input-LogIn"
                     type="password"
-                    placeholder="Enter your password"
+                    placeholder="Enter your password..."
                     value={passwordInput}
                     onChange={(e) => setPasswordInput(e.target.value)}
                 />
@@ -47,7 +47,7 @@ const handleLogIn = (e: React.FormEvent) => {
 
                 <hr className="Login-Line " />
 
-                <div className="alt-LogIn-Options">
+                <div className="alt.LogIn-Options">
                     <button type="button" onClick={() => alert("Goolge sign in not implemented yet!")}>
                         <i className="fa-brands fa-google"></i> Sign in with Google
                     </button>

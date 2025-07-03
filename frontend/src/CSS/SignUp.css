@@ -1,7 +1,7 @@
-.LogIn-Wrapper {
+.SignUp-Wrapper {
     position: fixed;
     inset: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url('/img/gameConsole.jpg');
     background-size: cover;
@@ -12,10 +12,9 @@
     align-items: center;
     z-index: 0;
     overflow: hidden;
-
 }
 
-.LogIn-Wrapper::before {
+.SignUp-Wrapper::before {
     content: '';
     position: absolute;
     left: 0;
@@ -27,7 +26,7 @@
     pointer-events: none;
 }
 
-.LogIn-Form-Container {
+.SignUp-Form-Container {
     position: relative;
     z-index: 1;
     background-color: rgba(20, 20, 20, 0.9);
@@ -39,18 +38,19 @@
     backdrop-filter: blur(8px);
     color: white;
     text-align: center;
+    
 }
 
-.LogIn-Form-Container h2 {
+.SignUp-Form-Container h2 {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
-.LogIn-Form-Container input {
+.SignUp-Form-Container input {
     width: 100%;
-    padding: 0.8rem;
-    margin-top: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #222;
@@ -58,13 +58,15 @@
     font-size: 1rem;
 }
 
+.SignUp-Form-Container label {
+    margin-top: 0.7rem;
+}
 
-.LogIn-Form-Container button {
+.SignUp-Form-Container button {
     width: 100%;
     padding: 0.9rem;
     margin-top: 0.5rem;
     background-color: #9656ce;
-    color: white;
     border: none;
     border-radius: 10px;
     font-weight: bold;
@@ -72,16 +74,16 @@
     transition: background-color 0.3s ease;
 }
 
-.LogIn-Form-Container button:hover {
+.SignUp-Form-Container button:hover {
     background-color: #7b43aa;
 }
 
-.LogIn-Form-Container button:focus {
+.SignUp-Form-Container button:focus {
     outline: 2px solid #7b43aa;
     outline-offset: 2px;
 }
 
-.alt-LogIn-Options button {
+.alt-SignUp-Options {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,11 +95,43 @@
     transition: background-color 0.3s ease;
 }
 
-.alt.LogIn-Options button:hover {
+.alt-SignUp-Options button:hover {
     background-color: #883cca;
 }
 
-.Login-Line {
-    margin-top: 1rem;
-    margin-bottom: 0.4rem;
+.SignUp-Line {
+    margin-top: 0.5rem;
+    margin-bottom: -0.4rem;
+
+}
+
+@media screen and (max-width: 1500px) {
+    .SignUp-Wrapper {
+        align-items: flex-start;
+        padding-top: 0.5rem;
+
+    }
+    .SignUp-Form-Container {
+        padding: 1.5rem;
+        width: 95%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .SignUp-Form-Container h2 {
+        font-size: 1.4rem;
+    }
+
+    .SignUp-Form-Container input {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .SignUp-Form-Container button {
+        padding: 0.7rem;
+    }
+
+    .alt-SignUp-Options {
+        gap: 0.7rem;
+    }
 }

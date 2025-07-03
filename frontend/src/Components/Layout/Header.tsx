@@ -23,7 +23,7 @@ const Header = () => {
             {/* Länkar för att registrera sig och logga in */}
             <div className="LogIn-signUp-Links">
               <Link to={"/Signup"}>SIGN UP</Link>
-              <Link to={"/Login"}>LOG IN</Link>
+              <Link to={"/Login"}>SIGN IN</Link>
               <Link to={"/"}>DISCOVERY</Link>
             </div>
 
