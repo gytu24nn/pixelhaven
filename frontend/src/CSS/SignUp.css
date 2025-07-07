@@ -47,20 +47,27 @@
     font-weight: bold;
 }
 
+.SignUp-Form-Container label {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
 .SignUp-Form-Container input {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     margin-top: 0.5rem;
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #222;
     color: white;
     font-size: 1rem;
+    margin: 0;
 }
 
-.SignUp-Form-Container label {
-    margin-top: 0.7rem;
-}
 
 .SignUp-Form-Container button {
     width: 100%;
@@ -83,7 +90,7 @@
     outline-offset: 2px;
 }
 
-.alt-SignUp-Options {
+.alt-SignUp-Options{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +127,11 @@
 
     .SignUp-Form-Container h2 {
         font-size: 1.4rem;
+    }
+    
+    .SignUp-Form-Container label {
+        margin-top: 0.65rem;
+        margin-bottom: 0.1rem;
     }
 
     .SignUp-Form-Container input {

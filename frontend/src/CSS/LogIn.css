@@ -47,6 +47,15 @@
     font-weight: bold;
 }
 
+.LogIn-Form-Container label {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
 .LogIn-Form-Container input {
     width: 100%;
     padding: 0.8rem;
@@ -56,6 +65,7 @@
     background-color: #222;
     color: white;
     font-size: 1rem;
+    margin: 0;
 }
 
 
@@ -81,7 +91,7 @@
     outline-offset: 2px;
 }
 
-.alt-LogIn-Options button {
+.alt-LogIn-Options {
     display: flex;
     align-items: center;
     justify-content: center;
