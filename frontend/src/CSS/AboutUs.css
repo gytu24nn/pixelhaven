@@ -1,0 +1,57 @@
+.AboutUs-Wrapper {
+    color: #ffffff;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto ;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.AboutUs-Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    column-gap: 5rem;
+}
+
+.AboutUs-Section.reverse {
+    flex-direction: row-reverse;
+}
+
+.AboutUs-Text {
+    flex: 1 1 400px;
+
+}
+
+.AboutUs-Text h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #9656ce;
+}
+
+.AboutUs-Text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.AboutUs-Text a {
+    color : #9656ce;
+    text-decoration: underline;
+}
+
+.AboutUs-Text a:hover {
+    color: #7b43aa;
+}
+
+.AboutUs-Image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.AboutUs-Image img {
+    max-width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
