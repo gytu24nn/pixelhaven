@@ -2,7 +2,7 @@
 import { useState} from "react";
 
 
-// Import CSS from the Login component
+// Import CSS from the Login css file
 import "../../CSS/LogIn.css"
 
 const LogIn = () => {
