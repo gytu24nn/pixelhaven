@@ -1,4 +1,3 @@
-
 // Import CSS from the AboutUs css file
 import "../../CSS/AboutUs.css"
 
@@ -33,18 +32,10 @@ const AboutUs = () => {
                     <ul>
                         <li>🎮 Save games to personal lists for example "Want to play", "Playing now" and "Completed</li>
                         <li>🧩 Track what games you own</li>
-                        <li>🔁 Get random game suggestions</li>
+                        <li>🔁 Get random game suggestions on what to play fromm your owed games or randoms</li>
                         <li>📝 Rate and give personal reviews</li>
                     </ul>
                     <br />
-                    <p>
-                        All game data shown in PixelHaven comes from the amazing{' '}
-                        <a href="https://rawg.io/apidocs" target="_blank" rel="noopener noreferrer">
-                            RAWG Video Games Database
-                        </a>
-                        <br />
-                        Without them, this project wouldn’t be possible.
-                    </p>
 
                 </div>
             </div>
