@@ -20,9 +20,6 @@ const Layout = () => {
       {/* Footer längst ner på sidan. */}
       <footer>
         <p>© PixelHaven</p>
-        <p>
-          Game data powered by <a href="https://rawg.io" target="_blank" rel="noopener noreferrer">RAWG</a>
-        </p>
       </footer>
     </div>
   );
