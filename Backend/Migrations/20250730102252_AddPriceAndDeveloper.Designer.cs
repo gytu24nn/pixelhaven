@@ -4,6 +4,7 @@ using Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250730102252_AddPriceAndDeveloper")]
+    partial class AddPriceAndDeveloper
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,133 +72,133 @@ namespace Backend.Migrations
                         new
                         {
                             GameId = 1L,
-                            Developer = "ConcernedApe",
+                            Developer = "",
                             GameDescription = "A farming simulation game where you can grow crops, raise animals, and build your farm.",
                             GameGenre = "Indie Games",
                             GameTitle = "Stardew Valley",
                             GamesCategoryId = 3L,
                             ImageUrl = "img/stardew_valley.jpg",
-                            Price = 13.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2016, 2, 25, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 5L,
-                            Developer = "Playdead",
+                            Developer = "",
                             GameDescription = "A puzzle-platformer adventure game with a dark, atmospheric world and unique art style.",
                             GameGenre = "Indie Games",
                             GameTitle = "Limbo",
                             GamesCategoryId = 3L,
                             ImageUrl = "img/Limbo.jpg",
-                            Price = 9.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2010, 7, 21, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 6L,
-                            Developer = "Re-Logic",
+                            Developer = "",
                             GameDescription = "A 2D sandbox adventure game where you can explore, build, and fight in a procedurally generated world.",
                             GameGenre = "Indie Games",
                             GameTitle = "Terraria",
                             GamesCategoryId = 3L,
                             ImageUrl = "img/Terraria.jpg",
-                            Price = 9.75m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2011, 5, 16, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 3L,
-                            Developer = "FromSoftware",
+                            Developer = "",
                             GameDescription = "An action RPG set in a dark fantasy world, known for its challenging gameplay and deep lore.",
                             GameGenre = "RPG",
                             GameTitle = "Elden ring",
                             GamesCategoryId = 1L,
                             ImageUrl = "img/EldenRing.jpg",
-                            Price = 59.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2022, 2, 25, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 4L,
-                            Developer = "CD Projekt Red",
+                            Developer = "",
                             GameDescription = "A futuristic open-world RPG set in the dystopian Night City, focusing on a customizable character.",
                             GameGenre = "RPG",
                             GameTitle = "Cyberpunk 2077",
                             GamesCategoryId = 1L,
                             ImageUrl = "img/cyberpunk.jpg",
-                            Price = 59.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2020, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 2L,
-                            Developer = "Rockstar Games",
+                            Developer = "",
                             GameDescription = "An action-adventure game set in the American Wild West, focusing on the life of an outlaw.",
                             GameGenre = "Action",
                             GameTitle = "Red Dead Redemption 2",
                             GamesCategoryId = 2L,
                             ImageUrl = "img/RDR2.jpg",
-                            Price = 59.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2018, 10, 26, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 7L,
-                            Developer = "Respawn Entertainment",
+                            Developer = "",
                             GameDescription = "A free-to-play battle royale game set in the Titanfall universe, featuring unique characters with special abilities.",
                             GameGenre = "Action",
                             GameTitle = "Apex Legends",
                             GamesCategoryId = 2L,
                             ImageUrl = "img/ApexLegends.jpg",
-                            Price = 0.00m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2019, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 8L,
-                            Developer = "Crystal Dynamics",
+                            Developer = "",
                             GameDescription = "An action-adventure game that follows the origin story of Lara Croft as she explores a mysterious island.",
                             GameGenre = "Action",
                             GameTitle = "Tomb Raider (2013)",
                             GamesCategoryId = 2L,
                             ImageUrl = "img/TombRaider.jpg",
-                            Price = 14.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2013, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 9L,
-                            Developer = "Maxis",
+                            Developer = "",
                             GameDescription = "A life simulation game where players create and control people in a virtual world.",
                             GameGenre = "Simulation",
                             GameTitle = "The Sims 4",
                             GamesCategoryId = 4L,
                             ImageUrl = "img/TheSims4.jpg",
-                            Price = 0.00m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2014, 9, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 10L,
-                            Developer = "SCS Software",
+                            Developer = "",
                             GameDescription = "A vehicle simulation game where players drive trucks across Europe, delivering cargo and managing their own trucking company.",
                             GameGenre = "Simulation",
                             GameTitle = "Euro Truck Simulator 2",
                             GamesCategoryId = 4L,
                             ImageUrl = "img/EuroTruckSimulator2.jpg",
-                            Price = 19.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2012, 10, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             GameId = 11L,
-                            Developer = "GIANTS Software",
+                            Developer = "",
                             GameDescription = "A farming simulation game that allows players to manage their own farm, grow crops, and raise animals.",
                             GameGenre = "Simulation",
                             GameTitle = "Farming Simulator 25",
                             GamesCategoryId = 4L,
                             ImageUrl = "img/FarmingSimulator25.jpg",
-                            Price = 49.99m,
+                            Price = 0m,
                             ReleaseDate = new DateTime(2024, 11, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
