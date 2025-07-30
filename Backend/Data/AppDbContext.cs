@@ -52,6 +52,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A farming simulation game where you can grow crops, raise animals, and build your farm.",
                 GameGenre = "Indie Games",
                 ImageUrl = "img/stardew_valley.jpg",
+                Price = 13.99m,
+                Developer = "ConcernedApe",
                 ReleaseDate = new DateTime(2016, 2, 25),
                 GamesCategoryId = 3
 
@@ -63,6 +65,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A puzzle-platformer adventure game with a dark, atmospheric world and unique art style.",
                 GameGenre = "Indie Games",
                 ImageUrl = "img/Limbo.jpg",
+                Price = 9.99m,
+                Developer = "Playdead",
                 ReleaseDate = new DateTime(2010, 7, 21),
                 GamesCategoryId = 3
             },
@@ -73,6 +77,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A 2D sandbox adventure game where you can explore, build, and fight in a procedurally generated world.",
                 GameGenre = "Indie Games",
                 ImageUrl = "img/Terraria.jpg",
+                Price = 9.75m,
+                Developer = "Re-Logic",
                 ReleaseDate = new DateTime(2011, 5, 16),
                 GamesCategoryId = 3
             },
@@ -85,6 +91,8 @@ public class AppDbContext : DbContext
                 GameDescription = "An action RPG set in a dark fantasy world, known for its challenging gameplay and deep lore.",
                 GameGenre = "RPG",
                 ImageUrl = "img/EldenRing.jpg",
+                Price = 59.99m,
+                Developer = "FromSoftware",
                 ReleaseDate = new DateTime(2022, 2, 25),
                 GamesCategoryId = 1
             },
@@ -95,6 +103,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A futuristic open-world RPG set in the dystopian Night City, focusing on a customizable character.",
                 GameGenre = "RPG",
                 ImageUrl = "img/cyberpunk.jpg",
+                Price = 59.99m,
+                Developer = "CD Projekt Red",
                 ReleaseDate = new DateTime(2020, 12, 10),
                 GamesCategoryId = 1
             },
@@ -107,6 +117,8 @@ public class AppDbContext : DbContext
                 GameDescription = "An action-adventure game set in the American Wild West, focusing on the life of an outlaw.",
                 GameGenre = "Action",
                 ImageUrl = "img/RDR2.jpg",
+                Price = 59.99m,
+                Developer = "Rockstar Games",
                 ReleaseDate = new DateTime(2018, 10, 26),
                 GamesCategoryId = 2
 
@@ -118,6 +130,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A free-to-play battle royale game set in the Titanfall universe, featuring unique characters with special abilities.",
                 GameGenre = "Action",
                 ImageUrl = "img/ApexLegends.jpg",
+                Price = 0.00m, // Free-to-play
+                Developer = "Respawn Entertainment",
                 ReleaseDate = new DateTime(2019, 2, 4),
                 GamesCategoryId = 2
             },
@@ -128,6 +142,8 @@ public class AppDbContext : DbContext
                 GameDescription = "An action-adventure game that follows the origin story of Lara Croft as she explores a mysterious island.",
                 GameGenre = "Action",
                 ImageUrl = "img/TombRaider.jpg",
+                Price = 14.99m,
+                Developer = "Crystal Dynamics",
                 ReleaseDate = new DateTime(2013, 3, 5),
                 GamesCategoryId = 2
             },
@@ -140,6 +156,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A life simulation game where players create and control people in a virtual world.",
                 GameGenre = "Simulation",
                 ImageUrl = "img/TheSims4.jpg",
+                Price = 0.00m, // Free-to-play
+                Developer = "Maxis",
                 ReleaseDate = new DateTime(2014, 9, 2),
                 GamesCategoryId = 4
             },
@@ -150,6 +168,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A vehicle simulation game where players drive trucks across Europe, delivering cargo and managing their own trucking company.",
                 GameGenre = "Simulation",
                 ImageUrl = "img/EuroTruckSimulator2.jpg",
+                Price = 19.99m,
+                Developer = "SCS Software",
                 ReleaseDate = new DateTime(2012, 10, 19),
                 GamesCategoryId = 4
             },
@@ -160,6 +180,8 @@ public class AppDbContext : DbContext
                 GameDescription = "A farming simulation game that allows players to manage their own farm, grow crops, and raise animals.",
                 GameGenre = "Simulation",
                 ImageUrl = "img/FarmingSimulator25.jpg",
+                Price = 49.99m,
+                Developer = "GIANTS Software",
                 ReleaseDate = new DateTime(2024, 11, 7),
                 GamesCategoryId = 4
             }

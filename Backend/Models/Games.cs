@@ -13,6 +13,9 @@ public class Games
     public string ImageUrl { get; set; } = string.Empty;
     public DateTime ReleaseDate { get; set; }
 
+    public decimal Price { get; set; }
+    public string Developer { get; set; } = string.Empty;
+
     public long GamesCategoryId { get; set; }
     public GamesCategory? GamesCategory { get; set; }
 
