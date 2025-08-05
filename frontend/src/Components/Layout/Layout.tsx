@@ -20,6 +20,7 @@ const Layout = () => {
       {/* Footer längst ner på sidan. */}
       <footer>
         <p>© PixelHaven</p>
+        <p>Images are used for demonstration purposes only. All rights belong to their respective owners.</p>
       </footer>
     </div>
   );
