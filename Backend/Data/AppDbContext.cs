@@ -51,7 +51,7 @@ public class AppDbContext : DbContext
                 GameTitle = "Stardew Valley",
                 GameDescription = "A farming simulation game where you can grow crops, raise animals, and build your farm.",
                 GameGenre = "Indie Games",
-                ImageUrl = "img/stardew_valley.jpg",
+                ImageUrl = "img/StardewValley.jpg",
                 Price = 13.99m,
                 Developer = "ConcernedApe",
                 ReleaseDate = new DateTime(2016, 2, 25),
@@ -129,7 +129,7 @@ public class AppDbContext : DbContext
                 GameTitle = "Apex Legends",
                 GameDescription = "A free-to-play battle royale game set in the Titanfall universe, featuring unique characters with special abilities.",
                 GameGenre = "Action",
-                ImageUrl = "img/ApexLegends.jpg",
+                ImageUrl = "img/ApexLedgens.jpg",
                 Price = 0.00m, // Free-to-play
                 Developer = "Respawn Entertainment",
                 ReleaseDate = new DateTime(2019, 2, 4),

@@ -28,7 +28,7 @@ namespace Backend.controller
                     g.GameTitle,
                     g.ImageUrl,
                     g.GameGenre,
-                    g.ReleaseDate
+                    ReleaseDate = g.ReleaseDate.ToString("yyyy-MM-dd")
                 })
                 .ToListAsync();
 
@@ -49,6 +49,8 @@ namespace Backend.controller
                     g.GameGenre,
                     g.ImageUrl,
                     g.ReleaseDate,
+                    g.Developer,
+                    g.Price
 
 
                 })
