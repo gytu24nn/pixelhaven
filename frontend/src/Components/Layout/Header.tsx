@@ -5,18 +5,21 @@ import "../../CSS/Layout.css";
 const Header = () => {
     // State to manage the menu open/close state
   const [menuOpen, setMenuOpen] = useState(false);
+  const [discoveryOpen, setDiscoveryOpen] = useState(false);
 
-  //function to toggle the menu open/close state (funktion för att växla meny öppen/stängd)
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  //function to toggle the menu open/close state (funktion för att växla meny öppen/stängd meny)
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleDiscovery = () => setDiscoveryOpen(!discoveryOpen);
+
     return (
         <>
             {/*Här börjar header och i denna finns loga, sign up, log in and menu icon*/}
       <header>
         <div className="header-container">
           {/*Sidans logotyp*/}
-          <h1 className="Logo-text">Pixelhaven</h1>
+          <h1 className="Logo-text">
+            <Link to="/" onClick={() => setMenuOpen(false)}>Pixelhaven</Link>
+          </h1>
 
           {/*Sektion till höger i header med inloggningslänkar och menyikon */}
           <div className={`right-section ${menuOpen ? "menu-open" : ""}`}>
@@ -24,7 +27,6 @@ const Header = () => {
             <div className="LogIn-signUp-Links">
               <Link to={"/Signup"}>SIGN UP</Link>
               <Link to={"/Login"}>SIGN IN</Link>
-              <Link to={"/"}>DISCOVERY</Link>
             </div>
 
             {/* 
@@ -41,9 +43,18 @@ const Header = () => {
               */}
               {menuOpen && (
                 <div className="side-menu open">
-                  <Link to="/" onClick={() => setMenuOpen(false)}>
+                  <div className="menu-item" onClick={toggleDiscovery}>
+                    <Link to="/" onClick={() => setMenuOpen(false)}>
                     DISCOVERY
                   </Link>
+                  <i className={`fa-solid fa-chevron-${discoveryOpen ? "up" : "down"}`}></i>
+                  </div>
+                  {discoveryOpen && (
+                    <div className="submenu">
+                      <Link to="/Genres" onClick={() => setMenuOpen(false)}>GENRES</Link>
+                    </div>
+                  )}
+                  
                   <Link to="/Gametracker" onClick={() => setMenuOpen(false)}>
                     GAMETRACKER
                   </Link>

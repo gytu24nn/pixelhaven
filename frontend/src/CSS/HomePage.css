@@ -53,11 +53,42 @@
 .GameGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Anpassar sig automatiskt */
-  gap: 40px; /* ökat från 20px till 30px */
+  gap: 58px; /* ökat från 20px till 30px */
   padding: 40px;
 }
 
 .GameCard:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); /* Lila glow */
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.6); /* Lila glow */
+}
+
+
+/* CSS for genre title on genreDetail */
+
+.genre-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+.back-button {
+    color: white;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* lite luft under knappen */
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.back-button:hover {
+    background-color: #9656ce; /* mörkare blå vid hover */
 }
