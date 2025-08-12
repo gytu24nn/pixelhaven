@@ -16,16 +16,17 @@ namespace Backend.controller
             _context = context;
         }
 
-        [HttpGet("genre/{cateogryId}")]
-        public async Task<IActionResult> GetGamesByCategory(int cateogryId)
+        [HttpGet("genre/{categoryId}")]
+        public async Task<IActionResult> GetGamesByCategory(int categoryId)
         {
             var games = await _context.Games
-                .Where(g => g.GamesCategoryId == cateogryId)
+                .Where(g => g.GamesCategoryId == categoryId)
                 .Select(g => new
                 {
                     g.GameId,
                     g.GameTitle,
                     g.ImageUrl,
+                    g.GamesCategoryId,
                     g.GameGenre,
                     g.ReleaseDate
                 })

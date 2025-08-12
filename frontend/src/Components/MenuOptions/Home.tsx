@@ -14,16 +14,19 @@ const Home = () => {
 
     useEffect(() => {
         fetchRandomGames()
-            .then((data) => {
-                console.log("Api data:", data);
-                setGames(data);
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.error(err);
-                setError("Failed to fetch games");
-                setLoading(false);
-            })
+            const loadGames = async () => {
+                try { 
+                    const data = await fetchRandomGames();
+                    setGames(data);
+                    console.log("API response from fetchRandomGames:", data);
+                } catch (err) {
+                    console.error(err);
+                    setError("Failed to load games");
+                } finally {
+                    setLoading(false);
+                }
+            };
+            loadGames();
     }, []);
 
     return(

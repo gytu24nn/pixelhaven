@@ -11,6 +11,8 @@ import SignUp from './Components/MenuOptions/SignUp'
 import AboutUs from './Components/MenuOptions/AboutUs'
 import Gametracker from './Components/MenuOptions/Gametracker'
 import ErrorBoundaryFallBack from './Components/ErrorBoundry'
+import Genres from './Components/MenuOptions/Genres'
+import GenreDetail from './Components/MenuOptions/GenreDetail'
 
 
 function App() {
@@ -26,10 +28,13 @@ function App() {
           */}
           <Route path='/' element={<Layout />}>
             <Route path='/' element={<Home />}/>
+            <Route path='Genres' element={<Genres />}/>
+            <Route path='Genre/:categoryId' element={<GenreDetail />}/>
             <Route path='Login' element={<LogIn />}/>
             <Route path='Signup' element={<SignUp />}/>
             <Route path='Gametracker' element={<Gametracker />}/>
             <Route path='AboutUs' element={<AboutUs />}/>
+            
           </Route>
         </Routes>
         </ErrorBoundary>

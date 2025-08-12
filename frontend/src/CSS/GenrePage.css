@@ -1,0 +1,42 @@
+.GenreGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 40px;
+    padding: 40px;
+}
+
+.GenreCard {
+    position: relative;
+    /* background-color: #9656ce; */
+    background: linear-gradient(135deg, #6131d1, #8845c4); 
+    border-radius: 16px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(107, 70, 193, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.GenreCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 12px rgba(107, 70, 193, 0.4);
+}
+
+.GenreCard h3{
+    margin: 0;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.GenreGrid a {
+    color: inherit;
+    text-decoration: none;
+} 

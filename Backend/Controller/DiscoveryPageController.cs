@@ -54,7 +54,7 @@ namespace Backend.controller
 
 
                 })
-                .ToListAsync();
+                .FirstOrDefaultAsync();
 
             return Ok(game);
 
