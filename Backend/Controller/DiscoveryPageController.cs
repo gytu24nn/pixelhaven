@@ -56,6 +56,11 @@ namespace Backend.controller
                 })
                 .FirstOrDefaultAsync();
 
+            if (game == null)
+            {
+                return NotFound();
+            }
+
             return Ok(game);
 
         }

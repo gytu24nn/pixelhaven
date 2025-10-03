@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { fetchRandomGames } from "../../ApiFetch/FetchForDiscoveryPage";
 import { IGame } from "../../Interface";
 import "../../CSS/HomePage.css";
@@ -36,12 +37,14 @@ const Home = () => {
                 {error && <p className="error">{error}</p>}
                 {games.map((game) => (
                     <div className="GameCard" key={game.gameId} >
+                        <Link to={`/game/${game.gameId}`}>
                         <img src={`http://localhost:5034/${game.imageUrl}?v=3`} alt={game.gameTitle} className="game-image"/>
                         <h3 className="gameTitle">{game.gameTitle}</h3>
                         <div className="game-info">
                             <p>Genre: {game.gameGenre}</p>
                             <p>Released: {game.releaseDate}</p>
                         </div>
+                        </Link>
                     </div>
                 ))}
             </div>

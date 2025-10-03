@@ -8,10 +8,16 @@ export interface IGame {
 }
 
 // Används för detaljerad vy (DiscoveryPage game/{GameId})
-export interface IGameDetails extends IGame {
+export interface IGameDetails {
+    gameId: number;
+    gameTitle: string;
     gameDescription: string;
-    price: number;
+    gameGenre: string;
+    imageUrl: string;
+    releaseDate: string;
     developer: string;
+    price: number;
+
 }
 
 // Används för kategorier
